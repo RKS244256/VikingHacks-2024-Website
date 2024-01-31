@@ -5,21 +5,21 @@ const LOCAL_API_URL = "http://localhost:8000";
 // When deployed on Vercel, this path acts like a rewrite in vercel.json
 // Next.js would normally be unable to find the API endpoint
 // but Vercel somehow steps in and makes the Serverless Function visible
-const VERCEL_API_PATH = "/api/";
+// const VERCEL_API_PATH = "/api/";
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-	rewrites: async () => {
-		return [
-			{
-				source: "/api/:path*",
-				destination:
-					process.env.NODE_ENV === "development"
-						? `${LOCAL_API_URL}/:path*`
-						: VERCEL_API_PATH,
-			},
-		];
-	},
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+// 	rewrites: async () => {
+// 		return [
+// 			{
+// 				source: "/api/:path*",
+// 				destination:
+// 					process.env.NODE_ENV === "development"
+// 						? `${LOCAL_API_URL}/:path*`
+// 						: VERCEL_API_PATH,
+// 			},
+		// ];
+// 	},
 	async redirects() {
 		return [
 			{
@@ -33,7 +33,6 @@ const nextConfig = {
 				permanent: true,
 			},
 		];
-	},
-};
+	};
 
 module.exports = nextConfig;
