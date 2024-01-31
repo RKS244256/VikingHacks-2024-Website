@@ -44,7 +44,7 @@ const Landing = () => {
 				<p className="font-display text-2xl md:text-3xl">
 					2 Wellington St W, Brampton, ON
 				</p>
-				<Button className="z-10" text="Apply" href="/apply" />
+				<Button className="z-10" text="Apply" href="youtube.com" />
 			</div>
 		</section>
 	);
