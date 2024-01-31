@@ -80,7 +80,7 @@ function Navbar({ identity }: NavbarProps) {
 					<NavLinkItem href="/">Resources</NavLinkItem>
 					<NavLinkItem href="/">Stage</NavLinkItem> */}
 					{!status && !deadlinePassed && (
-						<NavLinkItem href="/apply">Apply</NavLinkItem>
+						<NavLinkItem href="youtube.com">Apply</NavLinkItem>
 					)}
 					<Button 
 						text="Donate ♡"
@@ -88,12 +88,12 @@ function Navbar({ identity }: NavbarProps) {
 						isLightVersion
 					/>
 					{status !== null && (
-						<NavLinkItem href="/portal">Portal</NavLinkItem>
+						<NavLinkItem href="youtube.com">Portal</NavLinkItem>
 					)}
 					{isLoggedIn ? (
 						<Button
 							text="Log In"
-							href="/login"
+							href="youtube.com"
 							usePrefetch={false}
 							isLightVersion
 						/>

@@ -1,6 +1,0 @@
-from typing import Mapping
-
-class DynamicTemplateData:
-    def __init__(
-        self, dynamic_template_data: Mapping[str, object] | None = ..., p: int = ...
-    ) -> None: ...
