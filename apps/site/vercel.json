@@ -1,10 +1,5 @@
 {
-	"buildCommand": "cd ../.. && turbo run build --filter={apps/site} && cd apps/site && ./copy-api.sh && ./vercel-lib.sh",
-	"functions": {
-		"api/index.py": {
-			"memory": 512,
-			"maxDuration": 10,
-			"excludeFiles": "{*.{js,ts,json},@(.next|.turbo|node_modules|public)/**,src/{*,!(api)/**}}"
-		}
-	}
+	"buildCommand": "cd ../.. && turbo run build --filter={apps/site} && cd apps/site && ./vercel-lib.sh"
+
+
 }
