@@ -1,0 +1,9 @@
+.invalidFeedback {
+	display: none;
+}
+
+.validated {
+	:invalid ~ .invalidFeedback {
+		display: block;
+	}
+}
