@@ -10,19 +10,17 @@ import Button from "@/lib/components/Button/Button";
 import HackLogo from "@/lib/components/HackLogo/HackLogo";
 
 import hamburger from "@/assets/icons/navigation-icon.svg";
-import { Identity } from "@/lib/utils/getUserIdentity";
-import hasDeadlinePassed from "@/lib/utils/hasDeadlinePassed";
+// import { Identity } from "@/lib/utils/getUserIdentity";
+// import hasDeadlinePassed from "@/lib/utils/hasDeadlinePassed";
 
 import buttonStyles from "@/lib/components/Button/Button.module.css";
 import styles from "./Navbar.module.scss";
 
-interface NavbarProps {
-	identity: Identity;
-}
+// interface NavbarProps {
+// 	identity: Identity;
+// }
 
-function Navbar({ identity }: NavbarProps) {
-	const { uid, status } = identity;
-	const isLoggedIn = uid === null;
+function Navbar() {
 
 	const [listShown, setListShown] = useState(false);
 	const [hasScrolled, setHasScrolled] = useState(false);
@@ -35,7 +33,7 @@ function Navbar({ identity }: NavbarProps) {
 		window.addEventListener("scroll", scrollHandler);
 	}, []);
 
-	const deadlinePassed = hasDeadlinePassed();
+	// const deadlinePassed = hasDeadlinePassed();
 
 	return (
 		<NavMenu.Root
@@ -79,35 +77,24 @@ function Navbar({ identity }: NavbarProps) {
 					<NavLinkItem href="/">Schedule</NavLinkItem>
 					<NavLinkItem href="/">Resources</NavLinkItem>
 					<NavLinkItem href="/">Stage</NavLinkItem> */}
-					{!status && !deadlinePassed && (
+					{/* {!status && !deadlinePassed && (
 						<NavLinkItem href="youtube.com">Apply</NavLinkItem>
-					)}
+					)} */}
 					<Button 
 						text="Donate ♡"
 						href="https://hcb.hackclub.com/donations/start/vikinghacks-2024"
 						isLightVersion
 					/>
+					<Button
+						text="Log In"
+						href="youtube.com"
+						usePrefetch={false}
+						isLightVersion
+					/>
 					{status !== null && (
 						<NavLinkItem href="youtube.com">Portal</NavLinkItem>
 					)}
-					{isLoggedIn ? (
-						<Button
-							text="Log In"
-							href="youtube.com"
-							usePrefetch={false}
-							isLightVersion
-						/>
-					) : (
-						<a
-							href="/logout"
-							className={clsx(
-								buttonStyles.button,
-								buttonStyles.lightButton,
-							)}
-						>
-							Log Out
-						</a>
-					)}
+
 				</NavMenu.List>
 			</div>
 		</NavMenu.Root>
