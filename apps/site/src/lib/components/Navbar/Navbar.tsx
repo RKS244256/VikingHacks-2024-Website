@@ -91,9 +91,6 @@ function Navbar() {
 						usePrefetch={false}
 						isLightVersion
 					/>
-					{status !== null && (
-						<NavLinkItem href="youtube.com">Portal</NavLinkItem>
-					)}
 
 				</NavMenu.List>
 			</div>
