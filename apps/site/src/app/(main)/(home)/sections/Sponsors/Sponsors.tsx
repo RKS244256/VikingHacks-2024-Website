@@ -49,7 +49,7 @@ export default async function Sponsors() {
 			<div className="grid max-w-lg lg:max-w-none lg:grid-cols-600 lg:items-stretch justify-center m-auto gap-y-1 gap-x-1 my-1 pl-1 pr-1">
 				<Stand
 					buttonText="Sponsorship Package"
-					buttonHref="/sponsorpackage "
+					buttonHref="Prospectus.pdf"
 				/>
 			</div>
 
