@@ -36,15 +36,15 @@ const Landing = () => {
 					fill
 				/>
 				<h1 className="font-display text-4xl md:text-5xl font-bold mb-2">
-					VikingHacks 2024
+					VikingHacks 2025
 				</h1>
 				<p className="font-display text-2xl md:text-3xl">
-					May 11, 2024
+					TBD
 				</p>
 				<p className="font-display text-2xl md:text-3xl">
-					2 Wellington St W, Brampton, ON
+					10 North Park Dr, Brampton, ON
 				</p>
-				<Button className="z-10" text="Apply" href="youtube.com" />
+				<Button className="z-10" text="Coming Soon" href="" />
 			</div>
 		</section>
 	);
