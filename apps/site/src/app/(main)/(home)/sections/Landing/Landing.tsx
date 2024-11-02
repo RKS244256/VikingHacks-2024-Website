@@ -39,7 +39,7 @@ const Landing = () => {
 					VikingHacks 2025
 				</h1>
 				<p className="font-display text-2xl md:text-3xl">
-					TBD
+					February 22, 2025
 				</p>
 				<p className="font-display text-2xl md:text-3xl">
 					10 North Park Dr, Brampton, ON
