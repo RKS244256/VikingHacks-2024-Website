@@ -10,7 +10,7 @@ import Navbar from "@/lib/components/Navbar/Navbar";
 import "./globals.css";
 
 export const metadata: Metadata = {
-	title: "VikingHacks 2024",
+	title: "VikingHacks 2025",
 	description:
 		"VikingHacks is North Park Hack Club's premier hackathon for high school students.",
 };
