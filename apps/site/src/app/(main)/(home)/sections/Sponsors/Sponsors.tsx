@@ -36,7 +36,7 @@ export default async function Sponsors() {
 				Sponsors
 			</h2>
 			<p className="max-w-md mb-18">
-				Interested in sponsoring VikingHacks 2024? Check out our
+				Interested in sponsoring VikingHacks 2025? Check out our
 				sponsorship package to learn more about our event! For more
 				information, please email us at{" "}
 				<a
