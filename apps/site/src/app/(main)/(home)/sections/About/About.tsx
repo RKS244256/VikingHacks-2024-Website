@@ -43,8 +43,8 @@ const About = () => {
 					to unleash their creativity in a forward-thinking environment.
 				</p>
 				<p>
-					This year, VikingHacks will take place the on May 11th,
-					2024. The event will be 100% in-person during the day.
+					This year, VikingHacks will take place on February 22nd,
+					2025. The event will be 100% in-person during the day.
 					Free workshops, food, and swag will be provided!
 				</p>
 			</section>
