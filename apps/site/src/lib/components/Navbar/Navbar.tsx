@@ -85,12 +85,12 @@ function Navbar() {
 						href="https://hcb.hackclub.com/donations/start/vikinghacks-2024"
 						isLightVersion
 					/>
-					<Button
+					{/* <Button
 						text="Log In"
 						href="youtube.com"
 						usePrefetch={false}
 						isLightVersion
-					/>
+					/> */}
 
 				</NavMenu.List>
 			</div>
