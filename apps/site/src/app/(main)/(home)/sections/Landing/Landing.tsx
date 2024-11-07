@@ -44,7 +44,11 @@ const Landing = () => {
 				<p className="font-display text-2xl md:text-3xl">
 					10 North Park Dr, Brampton, ON
 				</p>
+<<<<<<< HEAD
 				<Button className="z-10" text="Coming Soon" href="" />
+=======
+				<Button className="z-10" text="Coming Soon" href="404" />
+>>>>>>> f3548a581f682b284470e042ef40ad7a6c7e1c54
 			</div>
 		</section>
 	);

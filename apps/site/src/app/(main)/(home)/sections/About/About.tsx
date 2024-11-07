@@ -43,8 +43,13 @@ const About = () => {
 					to unleash their creativity in a forward-thinking environment.
 				</p>
 				<p>
+<<<<<<< HEAD
 					This year, VikingHacks will take place on February 22nd, 2025! 
 					The event will be 100% in-person during the day.
+=======
+					This year, VikingHacks will take place on February 22nd,
+					2025. The event will be 100% in-person during the day.
+>>>>>>> f3548a581f682b284470e042ef40ad7a6c7e1c54
 					Free workshops, food, and swag will be provided!
 				</p>
 			</section>
